@@ -20,9 +20,42 @@ a:active {
   outline: none;
 }
 
+:root {
+  --background-color: #050816;
+  --background-light: #10163a;
+
+  --btn-add: #b0afed;
+  --btn-add-end: #655dcd;
+
+  --btn-chart: #88f282;
+  --btn-chart-end: #2ba71d;
+
+  --btn-settings: #f1e027;
+  --btn-settings-end: #b1b40f;
+}
+
 body {
   line-height: 1;
   font-family: 'Roboto', sans-serif;
-  color: #000;
-  background-color: #c03f3f;
+  color: #fff;
+  background: radial-gradient(
+    circle at top,
+    var(--background-light),
+    var(--background-color) 60%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none; /* Standard */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1% auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
 }
